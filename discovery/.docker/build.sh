@@ -1,2 +1,3 @@
 #!/usr/bin/env bash
-docker build -t @pom.artifactId@ --file ./DockerFile .
+eval $(docker-machine env)
+docker build -t @pom.artifactId@ --file ./Dockerfile .
