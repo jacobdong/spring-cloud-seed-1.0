@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-eval $(docker-machine env)
-
 docker images
 
 mvn clean install
