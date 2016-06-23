@@ -17,8 +17,8 @@
 
     <dependencies>
         <!--<dependency>-->
-            <!--<groupId>org.springframework.cloud</groupId>-->
-            <!--<artifactId>spring-cloud-starter</artifactId>-->
+        <!--<groupId>org.springframework.cloud</groupId>-->
+        <!--<artifactId>spring-cloud-starter</artifactId>-->
         <!--</dependency>-->
 
         <dependency>
@@ -60,7 +60,7 @@
                             <goal>copy-resources</goal>
                         </goals>
                         <configuration>
-                            <outputDirectory>${basedir}/target/</outputDirectory>
+                            <outputDirectory>${project.basedir}/target/</outputDirectory>
                             <resources>
                                 <!--复制DockerFile-->
                                 <resource>
