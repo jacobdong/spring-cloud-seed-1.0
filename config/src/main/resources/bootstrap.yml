@@ -1,18 +1,10 @@
-/**
- * Created by jacobdong on 16/6/22.
- */
-spring:
-  application:
-    name: @artifactId@
-  profiles:
-    active: native
-
 eureka:
   instance:
-   non-secure-port: ${server.prot:8888}
-   metadata-map:
-   instanceId: ${spring.application.name}:${random.value}
-
+    non-secure-port: ${server.port:8888} #3
+    metadata-map:
+      instanceId: ${spring.application.name}:${random.value} #4
   client:
     service-url:
-      defaultZone:http://${eureka.host.localhot}:${eureka.port:8761}/eureka/
+      #defaultZone: http://${eureka.host:localhost}:${eureka.port:8761}/eureka/ #5
+      defaultZone: http://120.55.191.179:8761/eureka/
+

@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+
+#更新
+git pull
+
 docker images
 
 mvn clean install
