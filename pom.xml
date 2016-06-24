@@ -4,10 +4,16 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
+    <properties>
+        <spring.cloud.seed.version>V1.0.0R201606023</spring.cloud.seed.version>
+    </properties>
+
     <groupId>site.igeek</groupId>
     <artifactId>spring-cloud-seed</artifactId>
     <packaging>pom</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>${spring.cloud.seed.version}</version>
+    
     <modules>
         <module>config</module>
         <module>discovery</module>

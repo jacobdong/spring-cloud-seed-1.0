@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+
+eval $(docker-machine env)
 #更新
 git pull origin master
 echo "## 更新项目代码"

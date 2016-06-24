@@ -6,5 +6,4 @@ ADD /@pom.artifactId@-@pom.version@.jar //app
 
 EXPOSE  8761
 
-
 CMD ["java","-jar","//app/@pom.artifactId@-@pom.version@.jar"]

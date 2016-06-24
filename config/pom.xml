@@ -5,12 +5,12 @@
     <parent>
         <artifactId>spring-cloud-seed</artifactId>
         <groupId>site.igeek</groupId>
-        <version>1.0-SNAPSHOT</version>
+        <version>${spring.cloud.seed.version}</version>
     </parent>
+
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>config</artifactId>
-
 
     <dependencies>
         <dependency>
