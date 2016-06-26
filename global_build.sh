@@ -22,7 +22,7 @@ echo "## 准备执行 discovery构建脚本";
 
 echo "## discovery 构建docker镜像完成"
 
-cd ../../config/
+cd ../../config/target/
 
 echo "## 进入config脚本目录"; pwd
 
