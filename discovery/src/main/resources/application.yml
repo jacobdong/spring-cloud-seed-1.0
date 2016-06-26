@@ -6,7 +6,7 @@ eureka:
   server:
     enableSelfPreservation: false
   instance:
-    hostname: localhost
+    hostname: @project.artifactId@_@project.version@
   client:
     register-with-eureka: false
     fetch-registry: false
