@@ -4,10 +4,9 @@ spring:
       enabled: true
       discovery:
         enabled: true
-        service-id: config
+        service-id: config #1
   application:
-    name: @artifactId@
-
+    name: @project.artifactId@
 eureka:
   instance:
     non-secure-port: ${server.port:8082}
