@@ -1,12 +1,10 @@
-
 server:
   port: 8761
-
 eureka:
   server:
     enableSelfPreservation: false
   instance:
-    hostname: @project.artifactId@_@project.version@
+    hostname: @project.artifactId@
   client:
     register-with-eureka: false
     fetch-registry: false

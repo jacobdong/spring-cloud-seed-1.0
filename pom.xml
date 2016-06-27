@@ -13,7 +13,7 @@
     <artifactId>spring-cloud-seed</artifactId>
     <packaging>pom</packaging>
     <version>${spring.cloud.seed.version}</version>
-    
+
     <modules>
         <module>config</module>
         <module>discovery</module>
@@ -28,6 +28,28 @@
         <version>Brixton.SR1</version>
         <relativePath/>
     </parent>
+
+
+    <repositories>
+        <repository>
+            <id>aliyun</id>
+            <name>Public Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+    <pluginRepositories>
+        <pluginRepository>
+            <id>aliyun</id>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </pluginRepository>
+    </pluginRepositories>
 
 
     <dependencies>
@@ -47,5 +69,6 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
 
 </project>
